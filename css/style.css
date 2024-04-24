@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #2C73EF, #5698EF);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* nav bar */
+nav{
+     width: 100%;
+    border-bottom: white dotted 2px ;
+    
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    
+
+}
+nav ul li{
+    padding: 1em;
+    list-style: none;
+    padding-left: 2em;
+   
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 3ch;
+    color: white;
+    transition: .4s; 
+
+}
+ul li a:hover{
+ background-color: white;
+ color:black;
+ border-radius: .5em;
+ padding: 5px;
+}
+/* table */
+table{
+    margin: 0 auto;
+    font-size: 3ch;
+    color: white;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    padding: 1em;
+}
+
+table td{
+    padding: .5em;
+    border-bottom: white solid;
+}
+table th{
+    border-bottom: white solid;
+}
+
+/* cards */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    border-radius: 2rem;
+    margin: 0 auto;
+    transition: transform 1s;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+ .card:hover {
+        transform: scale(1.3);
+
+    }
