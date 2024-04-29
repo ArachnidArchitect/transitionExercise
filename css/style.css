@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Kavoon&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -7,7 +8,9 @@ body{
     background-image: linear-gradient(to top, #2C73EF, #5698EF);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+}
+section{
+    height:100vh;
 }
 
 /* nav bar */
@@ -25,21 +28,21 @@ nav ul {
     
 
 }
-nav ul li{
+.first-list{
     padding: 1em;
     list-style: none;
     padding-left: 2em;
    
 
 }
-ul li a{
+.first-list a{
     text-decoration: none;
     font-size: 3ch;
     color: white;
     transition: .4s; 
 
 }
-ul li a:hover{
+.first-list a:hover{
  background-color: white;
  color:black;
  border-radius: .5em;
@@ -52,7 +55,7 @@ table{
     color: white;
 
 }
-h1{
+h1.table-head{
     text-align: center;
     color: white;
     text-decoration: underline;
@@ -93,3 +96,112 @@ img{
         transform: scale(1.3);
 
     }
+
+/* section 2 */
+
+.two{
+    box-shadow: black 10px 10px;
+    background-color: #440381;
+    border-top: white solid 10px;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.art-head > h1{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3ch;
+    text-transform: uppercase;
+
+}
+/* This styles the template background, border and font */
+section article{
+    width: 80%;
+    height: 50%;
+    background-color: #2C73EF;
+    border-radius: 5em;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 3em;
+    overflow-y: hidden;
+
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* setting the normal state of the article's text to hidden */
+.hov-head{
+    padding:.5em;
+transition: text-align 2s;
+}
+.goal-text{
+    display: none;
+    transition: 2s;
+}
+ .hob-text{
+    display: none;
+}
+
+.hov-head:hover + .hob-text{
+display: block;
+padding: 1em;
+}
+.hov-head:hover {
+    text-align: center;
+    color: white;
+    font-size: 2;}
+.hov-head:hover + .goal-text{
+    display: block;
+    padding: 1em;
+    }
+/* hide artCont1 */
+.artCont1, .artCont2{
+    display: none;
+}
+/* artCont 2 */
+.par1{
+    padding:1em;
+}
+.par1 h1{
+    text-align: center;
+    font-size: 2ch;
+    color: white;
+}
+.btn-cont{
+    display: flex;
+    flex-direction: column;
+    width:2em;
+    position: absolute;
+    right: 1em;
+
+
+}
+.button{
+    background-color:#F46036 ;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin: .5em;
+    text-align: center;
+    justify-content: center;
+}
+.icon-btn-cont{
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+
+}
+img.icon{
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
